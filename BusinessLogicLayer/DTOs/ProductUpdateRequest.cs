@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DataAccessLayer.Entities
+namespace BusinessLogicLayer.DTOs
 {
-    public class Product
+    public class ProductUpdateRequest
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public string Category { get; set; }
-        public decimal UnitPrice { get; set; }
+        public double? UnitPrice { get; set; }
         public int? QuantityInStock { get; set; }
     }
 }
